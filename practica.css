@@ -27,6 +27,26 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
 
 /* --- Encabezado y Navegación --- */
 .header {
@@ -525,3 +545,6 @@ h2 {
   position: relative;
   z-index: 1;
 }
+
+
+
