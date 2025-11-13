@@ -89,6 +89,10 @@ body {
 .navbar a:hover, .navbar a.active {
     color: var(--primary-color);
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* --- Sección Principal (Hero) --- */
 .hero {
@@ -430,13 +434,34 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    .nav-container { flex-direction: column; gap: 15px; }
-    .hero { text-align: center; }
-    .hero p { margin-left: auto; margin-right: auto; }
-    .hero-buttons { display: flex; justify-content: center; }
-    .founders-grid { grid-template-columns: 1fr; }
-    .contact-form .btn { align-self: stretch; }
+    .nav-container { 
+        flex-direction: column; /* El menú pasa de horizontal a vertical */
+        gap: 15px;              /* Espacio entre los elementos */
+    }
+
+    .hero { 
+        text-align: center;     /* Centra el texto principal */
+    }
+
+    .hero p { 
+        margin-left: auto; 
+        margin-right: auto;     /* Centra los párrafos dentro del hero */
+    }
+
+    .hero-buttons { 
+        display: flex; 
+        justify-content: center; /* Botones alineados al centro */
+    }
+
+    .founders-grid { 
+        grid-template-columns: 1fr; /* La cuadrícula de fundadores se convierte en una sola columna */
+    }
+
+    .contact-form .btn { 
+        align-self: stretch;    /* El botón ocupa todo el ancho disponible */
+    }
 }
+
 .about-section ul li {
   background-color: var(--background-light); /* fondo base */
   color: var(--text-color-light);
@@ -545,6 +570,7 @@ h2 {
   position: relative;
   z-index: 1;
 }
+
 
 
 
